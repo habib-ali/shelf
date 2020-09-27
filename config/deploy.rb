@@ -7,7 +7,7 @@ set :repo_url, "git@github.com:habib-ali/shelf.git"
 set :deploy_to, "/var/www/#{fetch :application}"
 
 append :linked_dirs, 'log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'vendor/bundle', '.bundle', 'public/system', 'public/uploads'
-append :linked_files, 'config/database.yml', 'config/secrets.yml'
+append :linked_files, 'config/database.yml', 'config/secrets.yml', 'config/master.key'
 
 # set :linked_files, fetch(:linked_files, []).push(
 #   'config/database.yml',
